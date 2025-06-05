@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-
     <property name="LOG_DIR" value="logs"/>
-    <property name="TIMESTAMP" value="${current.date}"/>
+    <timestamp key="ts" datePattern="yyyyMMdd_HHmmss"/>
 
-    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${LOG_DIR}/test-log-${TIMESTAMP}.log</file>
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>${LOG_DIR}/test-log-${ts}.log</file>
+        <append>true</append>
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
@@ -12,13 +13,12 @@
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>%highlight(%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n)</pattern>
+            <pattern>%d{HH:mm:ss.SSS} %-5level [%logger{36}] - %msg%n</pattern>
         </encoder>
     </appender>
 
-    <root level="debug">
+    <root level="INFO">
         <appender-ref ref="CONSOLE"/>
         <appender-ref ref="FILE"/>
     </root>
-
 </configuration>

@@ -1,0 +1,14 @@
+14:38:28.655 [main] INFO  c.example.bookstore.stepdefs.Hooks - Logger initialized!
+14:38:28.659 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Generated username: testuser_003ee243, password: SecurePass_123!
+14:38:33.924 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+14:38:34.122 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+14:38:34.128 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Generated username: testuser_1e4351b4, password: SecurePass_123!
+14:38:37.553 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+14:38:37.558 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Generated username: testuser_c545ba94, password: SecurePass_123!
+14:38:39.328 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+14:38:39.489 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+14:38:39.495 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Generated username: testuser_4f9f56fe, password: SecurePass_123!
+14:38:40.536 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+14:38:40.539 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Generated username: testuser_5e853bdc, password: SecurePass_123!
+14:38:41.361 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+14:38:41.591 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
