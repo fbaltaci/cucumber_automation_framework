@@ -1,0 +1,6 @@
+23:21:25.721 [main] INFO  c.example.bookstore.stepdefs.Hooks - Logger initialized!
+23:21:29.376 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Created user with ID: 790f97c8-ff1e-4570-905a-7546e5c58e26 and token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3R1c2VyXzBiNWNkNjdkIiwicGFzc3dvcmQiOiJTZWN1cmVQYXNzXzEyMyEiLCJpYXQiOjE3NDkyNjY0ODh9.27-w-hhpurNvBX5nJB6dNxiuHM5B5wAMjGi0Wssb5cU
+23:21:30.157 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Add book response status: 400
+23:21:30.159 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 400, actual 400
+23:21:30.181 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response contains 'ISBN supplied is not available in Books Collection!'
+23:21:30.182 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.

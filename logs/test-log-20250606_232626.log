@@ -1,0 +1,37 @@
+23:26:26.963 [main] INFO  c.example.bookstore.stepdefs.Hooks - Logger initialized!
+23:26:28.815 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Fetched all books. Status: 200
+23:26:28.845 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 200, actual 200
+23:26:29.421 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:26:29.617 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Fetched book with ISBN: 9781449325862. Status: 200
+23:26:29.618 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 200, actual 200
+23:26:29.643 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Validating book title. Expected: 'Git Pocket Guide', Actual: 'Git Pocket Guide'
+23:26:29.645 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:26:29.812 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Fetched book with ISBN: invalid-isbn-123. Status: 400
+23:26:29.813 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 400, actual 400
+23:26:29.815 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response contains 'ISBN supplied is not available in Books Collection!'
+23:26:29.817 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:26:31.171 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Created user with ID: 1d20a716-f7f6-4f5d-96ff-7cf34272bbb3 and token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3R1c2VyX2IwYjdjZTU3IiwicGFzc3dvcmQiOiJTZWN1cmVQYXNzXzEyMyEiLCJpYXQiOjE3NDkyNjY3OTB9.GmXg61UiIZe5ZLgPb-0rq9qutXG_c8yH374EfEjTPSQ
+23:26:31.502 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Add book response status: 201
+23:26:31.502 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 201, actual 201
+23:26:31.502 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:26:32.670 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Created user with ID: 0d82583a-8171-4904-a53f-6cbaa9bc5524 and token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3R1c2VyXzIyYzUwMTk1IiwicGFzc3dvcmQiOiJTZWN1cmVQYXNzXzEyMyEiLCJpYXQiOjE3NDkyNjY3OTJ9.hrBTyAVkr-RhaV4Eeftv-Fg44lwtXCp9mF0QhtWane4
+23:26:32.929 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Add book response status: 400
+23:26:32.931 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 400, actual 400
+23:26:32.937 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response contains 'ISBN supplied is not available in Books Collection!'
+23:26:32.937 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:26:33.978 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Created user with ID: d0b99c92-5754-40ce-b171-c8c0a0d30947 and token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3R1c2VyXzkyYWM3YWFhIiwicGFzc3dvcmQiOiJTZWN1cmVQYXNzXzEyMyEiLCJpYXQiOjE3NDkyNjY3OTN9.dCtfyM6dOHJ3NsgTDDLNWHZbIcmgDNcTBkXMj6uvGI8
+23:26:33.979 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Set invalid token manually
+23:26:34.277 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Add book response status: 401
+23:26:34.278 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 401, actual 401
+23:26:34.278 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response contains 'User not authorized!'
+23:26:34.279 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:26:35.603 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Created user with ID: 9ed9848d-3ea8-4f34-bfe3-c6a4a4a4abec and token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3R1c2VyXzIwN2FjOTYzIiwicGFzc3dvcmQiOiJTZWN1cmVQYXNzXzEyMyEiLCJpYXQiOjE3NDkyNjY3OTV9.kRg0D2F098dY1Zzs_9mz2MSudpMvbcOr62qzPfBiwEA
+23:26:35.997 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Replacing book 9999999999999 with 9781449331818 for user 9ed9848d-3ea8-4f34-bfe3-c6a4a4a4abec
+23:26:35.998 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 400, actual 400
+23:26:35.999 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response contains 'ISBN supplied is not available in User's Collection!'
+23:26:36.000 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:26:37.324 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Created user with ID: 5c2db440-c8f5-4136-93b6-088b23622543 and token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3R1c2VyX2Y2NzUzMDI3IiwicGFzc3dvcmQiOiJTZWN1cmVQYXNzXzEyMyEiLCJpYXQiOjE3NDkyNjY3OTZ9.1v6ct0h4eQeiAJLbNsVpbu-leAXPYvbEhjnJ2mUs6M4
+23:26:38.193 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Deleting book 9999999999999 from user 5c2db440-c8f5-4136-93b6-088b23622543
+23:26:38.195 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 400, actual 400
+23:26:38.195 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response contains 'ISBN supplied is not available in User's Collection!'
+23:26:38.195 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.

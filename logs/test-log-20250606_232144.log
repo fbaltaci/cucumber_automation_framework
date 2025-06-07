@@ -1,0 +1,3 @@
+23:21:44.152 [main] INFO  c.example.bookstore.stepdefs.Hooks - Logger initialized!
+23:21:47.753 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Created user with ID: 2c122799-dcc5-4bcb-bed4-cbd121219930 and token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3R1c2VyXzk2YTkwODFmIiwicGFzc3dvcmQiOiJTZWN1cmVQYXNzXzEyMyEiLCJpYXQiOjE3NDkyNjY1MDd9.uyehxYyCZYxVT33H-WThDelpCwFGRz-RlHYAHCcyeTI
+23:21:47.883 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.

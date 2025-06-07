@@ -1,0 +1,5 @@
+23:21:08.807 [main] INFO  c.example.bookstore.stepdefs.Hooks - Logger initialized!
+23:21:10.499 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Fetched book with ISBN: invalid-isbn-123. Status: 400
+23:21:10.518 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 400, actual 400
+23:21:10.542 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response contains 'ISBN supplied is not available in Books Collection!'
+23:21:10.544 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.

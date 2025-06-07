@@ -1,0 +1,103 @@
+23:17:47.939 [main] INFO  c.example.bookstore.stepdefs.Hooks - Logger initialized!
+23:17:49.784 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Fetched all books. Status: 200
+23:17:49.802 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 200, actual 200
+23:17:50.358 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:17:50.759 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Fetched book with ISBN: 9781449325862. Status: 200
+23:17:50.760 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 200, actual 200
+23:17:50.782 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Validating book title. Expected: 'Git Pocket Guide', Actual: 'Git Pocket Guide'
+23:17:50.783 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:17:51.032 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Fetched book with ISBN: invalid-isbn-123. Status: 400
+23:17:51.033 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 400, actual 400
+23:17:51.034 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response contains 'ISBN supplied is not available in Books Collection!'
+23:17:51.036 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:17:52.445 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Created user with ID: 72a92459-4f86-43f5-8e22-e70f1e1dfb33 and token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3R1c2VyXzE3MTNkMzhiIiwicGFzc3dvcmQiOiJTZWN1cmVQYXNzXzEyMyEiLCJpYXQiOjE3NDkyNjYyNzF9._eI4VsyOBVcbzIinqbZTAsdLyj9PdajFQyl7LjFk4zo
+23:17:52.768 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Add book response status: 201
+23:17:52.769 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 201, actual 201
+23:17:52.769 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:17:53.781 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Created user with ID: 7d9249d9-d8b9-4594-bf2a-5ff4e1f76136 and token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3R1c2VyXzM0ZmRmOGFlIiwicGFzc3dvcmQiOiJTZWN1cmVQYXNzXzEyMyEiLCJpYXQiOjE3NDkyNjYyNzN9.mJx2aR3vIzEulPRavC8Qr8Y0VSDrdnF-LMuMOkQ6LVI
+23:17:54.118 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Add book response status: 400
+23:17:54.119 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 400, actual 400
+23:17:54.120 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response contains 'ISBN supplied is not available in Books Collection!'
+23:17:54.120 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:17:55.819 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Created user with ID: 32fdfd49-e4a1-43b8-bc7e-9e4e4ca12f88 and token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3R1c2VyX2JlZTI4NDU1IiwicGFzc3dvcmQiOiJTZWN1cmVQYXNzXzEyMyEiLCJpYXQiOjE3NDkyNjYyNzV9.akh2rNGKDhejkacALW1xmkQDM2WRQeDpFrdKG3n34ik
+23:17:55.820 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Set invalid token manually
+23:17:56.232 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Add book response status: 401
+23:17:56.233 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 401, actual 401
+23:17:56.233 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response contains 'User not authorized!'
+23:17:56.233 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:17:57.645 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Created user with ID: bd57e23e-7fcb-475f-9b07-22e6c5fa9db4 and token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3R1c2VyXzBmNDk4NzY1IiwicGFzc3dvcmQiOiJTZWN1cmVQYXNzXzEyMyEiLCJpYXQiOjE3NDkyNjYyNzZ9.fSMgXD3IrWruFpY6zitMbtIich49rHAwFiJyTRPramI
+23:17:57.777 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:17:57.917 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:17:58.850 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Created user with ID: 1dbe07ed-9f46-43d2-a5e9-348df9c4a012 and token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3R1c2VyXzEyYjVkMzhlIiwicGFzc3dvcmQiOiJTZWN1cmVQYXNzXzEyMyEiLCJpYXQiOjE3NDkyNjYyNzh9.8OdGtT9NahFMRQ9ae3LIkj33lMO0YWHmxsQ3tMEgwT8
+23:17:59.249 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Replacing book 9999999999999 with 9781449331818 for user 1dbe07ed-9f46-43d2-a5e9-348df9c4a012
+23:17:59.249 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 400, actual 400
+23:17:59.250 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response contains 'ISBN supplied is not available in User's Collection!'
+23:17:59.250 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:17:59.321 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:17:59.404 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:17:59.482 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:18:00.769 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Created user with ID: 91239752-ba66-4c29-bf2b-f8172a885509 and token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3R1c2VyXzE5NDEwNjljIiwicGFzc3dvcmQiOiJTZWN1cmVQYXNzXzEyMyEiLCJpYXQiOjE3NDkyNjYyODB9.lWhoA4Dp_5-ZWPRzKM8vxpKyMAJhDWVfXojG2zxsfvQ
+23:18:01.224 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Deleting book 9999999999999 from user 91239752-ba66-4c29-bf2b-f8172a885509
+23:18:01.225 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 400, actual 400
+23:18:01.226 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response contains 'ISBN supplied is not available in User's Collection!'
+23:18:01.226 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:18:01.306 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:18:02.451 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Created user with ID: abfa144d-6f48-441e-b751-0f356bc0dcda and token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3R1c2VyXzY5MTE4MTEzIiwicGFzc3dvcmQiOiJTZWN1cmVQYXNzXzEyMyEiLCJpYXQiOjE3NDkyNjYyODJ9.d-fqGqtFQ_slyUvCP8yLd09xrz_OmUlSTG9B0I_v95c
+23:20:02.602 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Attempted deleting book 9781449325862 without user ID
+23:20:02.604 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 400, actual 504
+23:20:02.732 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:20:02.737 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Generated username: testuser_c1a9cf43, password: SecurePass_123!
+23:20:02.737 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Sending POST request to create user: testuser_c1a9cf43
+23:20:03.567 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - User created successfully with userId: 82cbe8a4-7e34-403e-99e3-11cd3d7c9cba
+23:20:03.567 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 201, actual 201
+23:20:03.567 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Requesting token for user: testuser_c1a9cf43
+23:20:04.119 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Received token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3R1c2VyX2MxYTljZjQzIiwicGFzc3dvcmQiOiJTZWN1cmVQYXNzXzEyMyEiLCJpYXQiOjE3NDkyNjY0MDN9.rV7QvRSUt1KWQLV6-JZZzpIszKTyw6tLw05Q3MGaYaM
+23:20:04.120 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating token response...
+23:20:04.120 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Retrieving user with userId: 82cbe8a4-7e34-403e-99e3-11cd3d7c9cba
+23:20:04.397 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:20:04.400 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Generated user with empty password - username: testuser_9c593ad2
+23:20:04.400 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Sending POST request to create user: testuser_9c593ad2
+23:20:04.598 [main] WARN  c.e.bookstore.stepdefs.LoginSteps - User creation failed: Status 400, Body: {"code":"1200","message":"UserName and Password required."}
+23:20:04.598 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 400, actual 400
+23:20:04.599 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response contains 'UserName and Password required.'
+23:20:04.599 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:20:04.601 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Generated username: testuser_dbdf804d, password: SecurePass_123!
+23:20:04.603 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Sending POST request to create user: testuser_dbdf804d
+23:20:05.060 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - User created successfully with userId: f0b7450c-eb8f-43e0-b758-7e65b83e2c61
+23:20:05.060 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Sending token request with invalid password for user: testuser_dbdf804d
+23:20:05.739 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 200, actual 200
+23:20:05.740 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response contains 'User authorization failed'
+23:20:05.740 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:20:05.744 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Generated username: testuser_4958f5a1, password: SecurePass_123!
+23:20:05.745 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Sending POST request to create user: testuser_4958f5a1
+23:20:06.204 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - User created successfully with userId: de03837c-e214-4cb5-8e86-2ea269249a71
+23:20:06.204 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Set invalid token manually
+23:20:06.205 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Sending GET request with token: invalid_token_123
+23:20:06.896 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 401, actual 401
+23:20:06.896 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response contains 'User not authorized!'
+23:20:06.897 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:20:06.899 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Generated user with invalid password (missing special char): testuser_6b8b979b
+23:20:06.899 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Sending POST request to create user: testuser_6b8b979b
+23:20:07.059 [main] WARN  c.e.bookstore.stepdefs.LoginSteps - User creation failed: Status 400, Body: {"code":"1300","message":"Passwords must have at least one non alphanumeric character, one digit ('0'-'9'), one uppercase ('A'-'Z'), one lowercase ('a'-'z'), one special character and Password must be eight characters or longer."}
+23:20:07.059 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 400, actual 400
+23:20:07.059 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response contains 'Passwords must have at least one non alphanumeric character'
+23:20:07.059 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:20:07.061 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Generated username: testuser_a819ad91, password: SecurePass_123!
+23:20:07.062 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Sending POST request to create user: testuser_a819ad91
+23:20:07.482 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - User created successfully with userId: f4e7d90e-89ef-4614-82a6-bd2a485f6464
+23:20:07.483 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Sending second user creation attempt for username: testuser_a819ad91
+23:20:07.796 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 406, actual 406
+23:20:07.797 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response contains 'User exists!'
+23:20:07.797 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:20:07.799 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Generated username: testuser_8fbe6925, password: SecurePass_123!
+23:20:07.800 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Sending POST request to create user: testuser_8fbe6925
+23:20:08.136 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - User created successfully with userId: 10251264-1f3b-43bc-963f-9e47ef552f54
+23:20:08.136 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Attempting to generate token with empty password for user: testuser_8fbe6925
+23:20:08.291 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 400, actual 400
+23:20:08.291 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response contains 'UserName and Password required.'
+23:20:08.291 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
+23:20:08.295 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Generated password only: SecurePass_123!
+23:20:08.295 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Attempting to generate token with missing username...
+23:20:08.459 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 400, actual 400
+23:20:08.460 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response contains 'UserName and Password required.'
+23:20:08.460 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.

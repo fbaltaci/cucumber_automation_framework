@@ -1,0 +1,5 @@
+23:21:00.516 [main] INFO  c.example.bookstore.stepdefs.Hooks - Logger initialized!
+23:21:02.478 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Fetched book with ISBN: 9781449325862. Status: 200
+23:21:02.501 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 200, actual 200
+23:21:03.203 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Validating book title. Expected: 'Git Pocket Guide', Actual: 'Git Pocket Guide'
+23:21:03.206 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.

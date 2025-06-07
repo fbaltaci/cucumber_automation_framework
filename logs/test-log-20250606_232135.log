@@ -1,0 +1,7 @@
+23:21:35.113 [main] INFO  c.example.bookstore.stepdefs.Hooks - Logger initialized!
+23:21:38.518 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Created user with ID: d78abb42-5b27-4960-af27-76e966c2fe39 and token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3R1c2VyX2U1MjIyNTRkIiwicGFzc3dvcmQiOiJTZWN1cmVQYXNzXzEyMyEiLCJpYXQiOjE3NDkyNjY0OTh9.EsmBlRlAJbkjesIDWyHTL3k8hIp1Icer3bZaYlB3rMg
+23:21:38.521 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Set invalid token manually
+23:21:39.299 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Add book response status: 401
+23:21:39.306 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 401, actual 401
+23:21:39.340 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response contains 'User not authorized!'
+23:21:39.341 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.

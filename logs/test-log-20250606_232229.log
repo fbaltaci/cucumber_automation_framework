@@ -1,0 +1,6 @@
+23:22:29.995 [main] INFO  c.example.bookstore.stepdefs.Hooks - Logger initialized!
+23:22:40.671 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Created user with ID: 583151e5-8727-4805-a0c9-dff915753b8d and token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3R1c2VyX2M4YmUxN2VjIiwicGFzc3dvcmQiOiJTZWN1cmVQYXNzXzEyMyEiLCJpYXQiOjE3NDkyNjY1NjB9.MdBOQxUj0Iy1TiWD6Hp9-FWSewZeSl6urYdrKA30vv4
+23:22:41.653 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Replacing book 9999999999999 with 9781449331818 for user 583151e5-8727-4805-a0c9-dff915753b8d
+23:22:41.658 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 400, actual 400
+23:22:41.797 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response contains 'ISBN supplied is not available in User's Collection!'
+23:22:41.801 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.

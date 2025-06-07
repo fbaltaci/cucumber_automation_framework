@@ -1,0 +1,5 @@
+23:21:15.888 [main] INFO  c.example.bookstore.stepdefs.Hooks - Logger initialized!
+23:21:19.668 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Created user with ID: 46127178-b60f-44ff-aeb6-eff75213fe59 and token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InRlc3R1c2VyXzhjMmMzNTlkIiwicGFzc3dvcmQiOiJTZWN1cmVQYXNzXzEyMyEiLCJpYXQiOjE3NDkyNjY0Nzl9.wT0U5foztnfVMJkFKQ5lfwsOQiMgoZGskxrOcqCsfLw
+23:21:20.039 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Add book response status: 201
+23:21:20.039 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 201, actual 201
+23:21:20.060 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.

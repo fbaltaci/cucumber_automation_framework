@@ -1,0 +1,4 @@
+17:33:12.009 [main] INFO  c.example.bookstore.stepdefs.Hooks - Logger initialized!
+17:33:13.419 [main] INFO  c.e.b.stepdefs.BookStoreSteps - Fetched all books. Status: 200
+17:33:13.441 [main] INFO  c.e.bookstore.stepdefs.LoginSteps - Validating response status: expected 200, actual 200
+17:33:13.924 [main] INFO  c.example.bookstore.stepdefs.Hooks - Scenario finished.
