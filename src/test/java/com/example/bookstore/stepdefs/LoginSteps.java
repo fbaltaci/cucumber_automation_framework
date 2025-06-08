@@ -1,5 +1,6 @@
 package com.example.bookstore.stepdefs;
 
+import com.example.bookstore.util.ApiHelper;
 import com.example.bookstore.util.LoggerUtil;
 import com.example.bookstore.util.UserUtil;
 import io.cucumber.java.en.Given;
@@ -29,17 +30,7 @@ public class LoginSteps {
 
     @When("I send a POST request to create the user")
     public void createUser() {
-        RestAssured.baseURI = "https://bookstore.toolsqa.com";
-        String payload = String.format("""
-                {
-                  "userName": "%s",
-                  "password": "%s"
-                }
-                """, state.username, state.password);
-
-        logger.info("Sending POST request to create user: {}", state.username);
-        state.response = RestAssured.given().relaxedHTTPSValidation().contentType(ContentType.JSON).body(payload)
-                                    .post("/Account/v1/User");
+        state.response = ApiHelper.createUser(state.username, state.password);
         logger.debug("Create user response: {}", state.response.getBody().asString());
 
         if (state.response.statusCode() == 201) {
@@ -53,16 +44,7 @@ public class LoginSteps {
 
     @When("I send a POST request to generate a token for the user")
     public void generateToken() {
-        String payload = String.format("""
-                {
-                  "userName": "%s",
-                  "password": "%s"
-                }
-                """, state.username, state.password);
-
-        logger.info("Requesting token for user: {}", state.username);
-        state.response = RestAssured.given().relaxedHTTPSValidation().contentType(ContentType.JSON).body(payload)
-                                    .post("/Account/v1/GenerateToken");
+        state.response = ApiHelper.generateToken(state.username, state.password);
         logger.debug("Generate token response: {}", state.response.getBody().asString());
 
         state.token = state.response.jsonPath().getString("token");
@@ -86,8 +68,7 @@ public class LoginSteps {
     @Then("the user should be retrievable by GET request")
     public void retrieveUser() {
         logger.info("Retrieving user with userId: {}", state.userId);
-        state.response = RestAssured.given().relaxedHTTPSValidation().header("Authorization", "Bearer " + state.token)
-                                    .get("https://bookstore.toolsqa.com/Account/v1/User/" + state.userId);
+        state.response = ApiHelper.retrieveUser(state.userId, state.token);
         logger.debug("Retrieve user response: {}", state.response.getBody().asString());
 
         assertEquals(200, state.response.statusCode());
@@ -111,17 +92,8 @@ public class LoginSteps {
     @When("I send a POST request to generate a token with invalid password")
     public void generateTokenWithInvalidPassword() {
         logger.info("Sending token request with invalid password for user: {}", state.username);
-        String body = String.format("""
-                {
-                  "userName": "%s",
-                  "password": "WrongPassword123!"
-                }
-                """, state.username);
-
-        state.response = RestAssured.given().relaxedHTTPSValidation().contentType(ContentType.JSON).body(body)
-                                    .post("/Account/v1/GenerateToken");
+        state.response = ApiHelper.generateToken(state.username, "WrongPassword123!");
         logger.debug("Token response: {}", state.response.getBody().asString());
-
         state.token = state.response.jsonPath().getString("token");
     }
 
@@ -134,8 +106,7 @@ public class LoginSteps {
     @When("I send a GET request to retrieve the user")
     public void retrieveUserWithToken() {
         logger.info("Sending GET request with token: {}", state.token);
-        state.response = RestAssured.given().relaxedHTTPSValidation().header("Authorization", "Bearer " + state.token)
-                                    .get("https://bookstore.toolsqa.com/Account/v1/User/" + state.userId);
+        state.response = ApiHelper.retrieveUser(state.userId, state.token);
         logger.debug("Response: {}", state.response.getBody().asString());
     }
 
@@ -144,36 +115,19 @@ public class LoginSteps {
         state.username = UserUtil.generateUniqueUsername();
         state.password = "Password123"; // missing non-alphanumeric
         logger.info("Generated user with invalid password (missing special char): {}", state.username);
-
     }
 
     @When("I send another POST request to create the same user again")
     public void sendDuplicateUserRequest() {
         logger.info("Sending second user creation attempt for username: {}", state.username);
-        String body = String.format("""
-                {
-                  "userName": "%s",
-                  "password": "%s"
-                }
-                """, state.username, state.password);
-
-        state.response = RestAssured.given().relaxedHTTPSValidation().contentType(ContentType.JSON).body(body)
-                                    .post("/Account/v1/User");
+        state.response = ApiHelper.createUser(state.username, state.password);
         logger.debug("Duplicate user response: {}", state.response.getBody().asString());
     }
 
     @When("I attempt to generate a token with an empty password")
     public void generateTokenWithEmptyPassword() {
         logger.info("Attempting to generate token with empty password for user: {}", state.username);
-        String body = String.format("""
-                {
-                  "userName": "%s",
-                  "password": ""
-                }
-                """, state.username);
-
-        state.response = RestAssured.given().relaxedHTTPSValidation().contentType(ContentType.JSON).body(body)
-                                    .post("/Account/v1/GenerateToken");
+        state.response = ApiHelper.generateToken(state.username, "");
         logger.debug("Empty password response: {}", state.response.getBody().asString());
     }
 
@@ -197,5 +151,4 @@ public class LoginSteps {
                                     .post("/Account/v1/GenerateToken");
         logger.debug("Missing username response: {}", state.response.getBody().asString());
     }
-
 }

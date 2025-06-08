@@ -1,14 +1,17 @@
 package com.example.bookstore;
 
-import org.junit.platform.suite.api.ConfigurationParameter;
-import org.junit.platform.suite.api.SelectClasspathResource;
-import org.junit.platform.suite.api.Suite;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
 
-import static io.cucumber.junit.platform.engine.Constants.*;
-
-@Suite
-@SelectClasspathResource("features")
-@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "com.example.bookstore.stepdefs")
-@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty")
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        features = "src/test/resources/features",
+        glue = "com.example.bookstore.stepdefs",
+        plugin = {
+                "pretty",
+                "html:target/cucumber-reports/cucumber.html",
+                "json:target/cucumber-reports/cucumber.json"
+        })
 public class RunCucumberTest {
 }
