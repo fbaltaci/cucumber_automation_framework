@@ -38,14 +38,16 @@ public class LoginSteps {
                 """, state.username, state.password);
 
         logger.info("Sending POST request to create user: {}", state.username);
-        state.response = RestAssured.given().relaxedHTTPSValidation().contentType(ContentType.JSON).body(payload).post("/Account/v1/User");
+        state.response = RestAssured.given().relaxedHTTPSValidation().contentType(ContentType.JSON).body(payload)
+                                    .post("/Account/v1/User");
         logger.debug("Create user response: {}", state.response.getBody().asString());
 
         if (state.response.statusCode() == 201) {
             state.userId = state.response.jsonPath().getString("userID");
             logger.info("User created successfully with userId: {}", state.userId);
         } else {
-            logger.warn("User creation failed: Status {}, Body: {}", state.response.statusCode(), state.response.getBody().asString());
+            logger.warn("User creation failed: Status {}, Body: {}", state.response.statusCode(), state.response
+                    .getBody().asString());
         }
     }
 
@@ -59,7 +61,8 @@ public class LoginSteps {
                 """, state.username, state.password);
 
         logger.info("Requesting token for user: {}", state.username);
-        state.response = RestAssured.given().relaxedHTTPSValidation().contentType(ContentType.JSON).body(payload).post("/Account/v1/GenerateToken");
+        state.response = RestAssured.given().relaxedHTTPSValidation().contentType(ContentType.JSON).body(payload)
+                                    .post("/Account/v1/GenerateToken");
         logger.debug("Generate token response: {}", state.response.getBody().asString());
 
         state.token = state.response.jsonPath().getString("token");
@@ -83,7 +86,8 @@ public class LoginSteps {
     @Then("the user should be retrievable by GET request")
     public void retrieveUser() {
         logger.info("Retrieving user with userId: {}", state.userId);
-        state.response = RestAssured.given().relaxedHTTPSValidation().header("Authorization", "Bearer " + state.token).get("https://bookstore.toolsqa.com/Account/v1/User/" + state.userId);
+        state.response = RestAssured.given().relaxedHTTPSValidation().header("Authorization", "Bearer " + state.token)
+                                    .get("https://bookstore.toolsqa.com/Account/v1/User/" + state.userId);
         logger.debug("Retrieve user response: {}", state.response.getBody().asString());
 
         assertEquals(200, state.response.statusCode());
@@ -114,7 +118,8 @@ public class LoginSteps {
                 }
                 """, state.username);
 
-        state.response = RestAssured.given().relaxedHTTPSValidation().contentType(ContentType.JSON).body(body).post("/Account/v1/GenerateToken");
+        state.response = RestAssured.given().relaxedHTTPSValidation().contentType(ContentType.JSON).body(body)
+                                    .post("/Account/v1/GenerateToken");
         logger.debug("Token response: {}", state.response.getBody().asString());
 
         state.token = state.response.jsonPath().getString("token");
@@ -129,7 +134,8 @@ public class LoginSteps {
     @When("I send a GET request to retrieve the user")
     public void retrieveUserWithToken() {
         logger.info("Sending GET request with token: {}", state.token);
-        state.response = RestAssured.given().relaxedHTTPSValidation().header("Authorization", "Bearer " + state.token).get("https://bookstore.toolsqa.com/Account/v1/User/" + state.userId);
+        state.response = RestAssured.given().relaxedHTTPSValidation().header("Authorization", "Bearer " + state.token)
+                                    .get("https://bookstore.toolsqa.com/Account/v1/User/" + state.userId);
         logger.debug("Response: {}", state.response.getBody().asString());
     }
 
@@ -151,7 +157,8 @@ public class LoginSteps {
                 }
                 """, state.username, state.password);
 
-        state.response = RestAssured.given().relaxedHTTPSValidation().contentType(ContentType.JSON).body(body).post("/Account/v1/User");
+        state.response = RestAssured.given().relaxedHTTPSValidation().contentType(ContentType.JSON).body(body)
+                                    .post("/Account/v1/User");
         logger.debug("Duplicate user response: {}", state.response.getBody().asString());
     }
 
@@ -165,7 +172,8 @@ public class LoginSteps {
                 }
                 """, state.username);
 
-        state.response = RestAssured.given().relaxedHTTPSValidation().contentType(ContentType.JSON).body(body).post("/Account/v1/GenerateToken");
+        state.response = RestAssured.given().relaxedHTTPSValidation().contentType(ContentType.JSON).body(body)
+                                    .post("/Account/v1/GenerateToken");
         logger.debug("Empty password response: {}", state.response.getBody().asString());
     }
 
@@ -185,7 +193,8 @@ public class LoginSteps {
                 }
                 """, state.password);
 
-        state.response = RestAssured.given().relaxedHTTPSValidation().contentType(ContentType.JSON).body(body).post("/Account/v1/GenerateToken");
+        state.response = RestAssured.given().relaxedHTTPSValidation().contentType(ContentType.JSON).body(body)
+                                    .post("/Account/v1/GenerateToken");
         logger.debug("Missing username response: {}", state.response.getBody().asString());
     }
 
